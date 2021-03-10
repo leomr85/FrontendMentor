@@ -1,0 +1,212 @@
+/* :root{
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --dark-grayish: hsl(227, 10%, 46%);
+  --light-grayish: hsl(0, 0%, 59%);
+} */
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  /* Font */
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.125rem; /* Equals to 18px */
+
+  /* Position */
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+hr{
+  border: none;
+  border-top: 1px solid #e6e6e6; /* Fallback color */
+  border-top: 1px solid hsl(0, 0%, 90%);
+}
+
+/* ** ** ** ** ** ** ***** ** ** ** ** ** ** */
+/* ** ** ** ** ** ** Class ** ** ** ** ** ** */
+/* ** ** ** ** ** ** ***** ** ** ** ** ** ** */
+
+.window{
+  /* Style */
+  background: #19a2ae; /* Fallback color */
+  background: hsl(185, 75%, 39%);
+
+  /* Position */
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+}
+
+.bg-fig{
+  position: absolute;
+  z-index: 0;
+}
+
+.bg-fig-top{
+  top: -60%;
+  right: 50%;
+}
+
+.bg-fig-bottom{
+  bottom: -60%;
+  left: 50%;
+}
+
+
+/* ** ** ** ** ** ** **** ** ** ** ** ** ** */
+/* ** ** ** ** ** ** Card ** ** ** ** ** ** */
+/* ** ** ** ** ** ** **** ** ** ** ** ** ** */
+
+.content{
+  /* Style */
+  height: 100%;
+
+  /* Position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  /* Style */
+  height: 370px;
+  width: 320px;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 30px 400px hsl(227, 10%, 46%);
+
+  /* Position */
+  position: relative;
+}
+
+.card-top-bgfig > img{
+  /* Style */
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-top-avatar{
+  /* Position */
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.card-top-avatar > img{
+  /* Style */
+  border-radius: 50%;
+  border: solid 5px #ffffff;
+}
+
+.card-top-info{
+  /* Text */
+  text-align: center;
+}
+
+.card-top-info-name{
+  /* Position */
+  margin-top: 20px;
+
+  /* Text */
+  font-weight: 700;
+}
+
+.card-top-info-age{
+  /* Position */
+  padding-left: 5px;
+
+  /* Text */
+  color: #6a6f81; /* Fallback color */
+  color: hsl(227, 10%, 46%);
+  font-weight: 100;
+}
+
+.card-top-info-city{
+  /* Text */
+  color: #6a6f81; /* Fallback color */
+  color: hsl(227, 10%, 46%);
+  text-align: center;
+
+  font-size: 0.875rem; /* Equals to 14px */
+  font-weight: 400;
+
+  /* Position */
+  margin-top: -5px;
+  margin-bottom: 25px;
+}
+
+.card-footer{
+  /* Text */
+  text-align: center;
+}
+
+.card-footer-stats{
+  /* Position */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: -17px;
+}
+
+.card-footer-stats-item{
+  /* Position */
+  padding: 0 20px 0 20px;
+}
+
+.card-footer-stats-item-number{
+  /* Text */
+  font-weight: 700;
+}
+
+.card-footer-stats-item-text{
+  /* Text */
+  color: #6a6f81; /* Fallback color */
+  color: hsl(227, 10%, 46%);
+
+  font-size: 0.625rem; /* Equals to 10px */
+  font-weight: lighter;
+
+  letter-spacing: 1.5px;
+}
+
+.attribution {
+  /* Text */
+  font-size: 0.6875rem; /* Equals to 11px */
+  text-align: center;
+  color: #2d3248;
+  color: hsl(229, 23%, 23%);
+
+  /* Position */
+  bottom: 5%;
+  position: relative;
+}
+
+.attribution a {
+  color: #3e52a3; /* Fallback color */
+  color: hsl(228, 45%, 44%);
+
+  text-decoration: none;
+}
