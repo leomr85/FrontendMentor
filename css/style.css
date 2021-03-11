@@ -168,7 +168,7 @@ hr{
   justify-content: center;
   align-items: center;
   margin-top: 25px;
-  margin-left: -4%;
+  margin-left: -4%; /* Undesired setting */
 }
 
 .card-footer-stats-item{
